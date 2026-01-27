@@ -1,0 +1,149 @@
+*{
+    cursor: url('assets/cursors/cursor.svg') 50 50, auto;
+}
+
+:root{
+    --primary-color: #0d0f1b;
+    --secondary-color: #021228;
+    --secondary-color-light: #071a36;
+    /* --accent-color: #FF5733; */
+    --white: #FFFFFF;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    min-height: 100vh;
+}
+
+section{
+    padding: 50px;
+}
+
+.section1{
+    color: var(--white);
+    background-image: url('assets/images/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.sectionHeader{
+    display: flex;
+}
+
+.section1gauche{
+    width: 50%;
+}
+
+.section1gauche h1{
+    font-size: 4em;
+}
+
+.section1droite{
+    flex: 1;
+    padding: 20px;
+    width: 50%;
+}
+
+.section1droite img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projets{
+    display: flex;
+    gap: 40px;
+    margin-top: auto;
+    padding: 25px 25px 25px 25px 25px;
+}
+
+.projet{
+    padding: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projet h2 {
+    margin-top: 0;
+}
+
+.projet button {
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.projet:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.projet button:hover {
+    background-color: var(--secondary-color-light);
+    cursor: url('assets/cursors/cursor-green.svg') 50 50, auto;
+}
+
+.projetimg{
+    display: flex;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+}
+
+.projet:hover .projetimg{
+    height: 280px;
+}
+
+.projetimg img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    align-self: flex-end; 
+}
+
+.pun:hover{
+    .imgun{
+        display: flex;
+        justify-content: center;
+        height: 280px;
+        overflow: hidden;
+        transition: height 0.4s ease-out;
+    }
+}
+
+.pdeux:hover{
+    .imgdeux{
+        display: flex;
+        justify-content: center;
+        height: 280px;
+        overflow: hidden;
+        transition: height 0.4s ease-out;
+    }
+}
+
+.ptrois:hover{
+    .imgtrois{
+        display: flex;
+        justify-content: center;
+        height: 280px;
+        overflow: hidden;
+        transition: height 0.4s ease-out;
+    }
+}

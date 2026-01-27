@@ -1,0 +1,1 @@
+Inspiration de la maquette 23: https://www.figma.com/design/wrt9tTSdDmbBwbqwizY4q2/50--Landing-page-designs--Community-?node-id=801-2256&p=f&t=3iFJ8EapOrMNJ00A-0
