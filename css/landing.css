@@ -1,14 +1,100 @@
+body{
+    background-image: url('../assets/images/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    padding-inline: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(8px);
+    color: var(--white);
+}
+
+.navbar nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+#account img{
+    height: 44px;
+}
+
+.account-container {
+    position: relative;
+}
+
+.user-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.user-menu p {
+    margin: 8px 0;
+    color: var(--white);
+}
+
+.user-menu p:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.user-menu p:nth-child(2) {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#logout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(239, 68, 68, 0.8);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: rgba(239, 68, 68, 1);
+    cursor: url('../assets/cursors/cursor-green.svg') 50 50, auto;
+}
+
 section{
     padding: 50px;
 }
 
 .section1{
     color: var(--white);
-    background-image: url('../assets/images/back.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
