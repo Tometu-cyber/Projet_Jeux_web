@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <title>Connexion - Projet Jeux Web - L3 MIAGE</title>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="auth-header">
+        <h1 id="auth-title">Connexion</h1>
+        <p id="auth-subtitle">Accédez à votre compte</p>
+    </div>
+
+    <!-- Message Zone -->
+    <div id="message-container" class="message-container" style="display: none;"></div>
+
+    <div class="switcher">
+        <div class="indicator" id="indicator"></div>
+        <button id="loginTab" class="active" onclick="showLogin()">Connexion</button>
+        <button id="registerTab" onclick="showRegister()">Inscription</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="loginForm" class="active">
+        <label for="login-email">Adresse email</label>
+        <input id="login-email" type="email" placeholder="exemple@email.com" required>
+
+        <label for="login-password">Mot de passe</label>
+        <input id="login-password" type="password" placeholder="Votre mot de passe" required>
+
+        <button class="submit">Se connecter</button>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="registerForm">
+        <div class="row">
+            <div class="field">
+                <label for="register-firstname">Prénom</label>
+                <input id="register-firstname" type="text" placeholder="Tony" required>
+            </div>
+            <div class="field">
+                <label for="register-name">Nom</label>
+                <input id="register-name" type="text" placeholder="Stark" required>
+            </div>
+        </div>
+
+        <label for="register-email">Adresse email</label>
+        <input id="register-email" type="email" placeholder="tony@starkindustries.com" required>
+        <div class="row">
+            <div class="field">
+                <label for="register-password">Mot de passe</label>
+                <input id="register-password" type="password" placeholder="Votre mot de passe" required>
+            </div>
+            <div class="field">
+                <label for="register-password-confirm">Confirmez le mot de passe</label>
+                <input id="register-password-confirm" type="password" placeholder="Confirmez votre mot de passe" required>
+            </div>
+        </div>
+        <button class="submit">Créer un compte</button>
+    </form>
+
+</div>
+
+<script src="../js/auth.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

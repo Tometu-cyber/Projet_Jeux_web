@@ -1,13 +1,47 @@
 *{
+    box-sizing: border-box;
     cursor: url('assets/cursors/cursor.svg') 50 50, auto;
 }
 
-:root{
+:root {
+    /* Couleurs principales */
     --primary-color: #0d0f1b;
     --secondary-color: #021228;
     --secondary-color-light: #071a36;
-    /* --accent-color: #FF5733; */
-    --white: #FFFFFF;
+    
+    /* Couleurs d'accentuation */
+    --accent-color: #3b82f6;          
+    --accent-color-light: #60a5fa;
+    --accent-color-dark: #1e40af;
+    
+    /* Couleurs complémentaires */
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+    --info-color: #06b6d4;
+    
+    /* Couleurs neutres */
+    --white: #ffffff;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    
+    /* Couleurs avec transparence (pour les overlays) */
+    --overlay-light: rgba(255, 255, 255, 0.1);
+    --overlay-medium: rgba(255, 255, 255, 0.25);
+    --overlay-dark: rgba(0, 0, 0, 0.5);
+
+    /* Border */
+    --border: rgba(255, 255, 255, 0.15);
+
+    /* Autres variables */
+    --muted: #94a3b8;
 }
 
 body{
@@ -16,119 +50,4 @@ body{
     padding: 0;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     min-height: 100vh;
-}
-
-section{
-    padding: 50px;
-}
-
-.section1{
-    color: var(--white);
-    background-image: url('assets/images/back.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-
-.sectionHeader{
-    display: flex;
-}
-
-.section1gauche{
-    width: 50%;
-}
-
-.section1gauche h1{
-    font-size: 4em;
-}
-
-.section1droite{
-    flex: 1;
-    padding: 20px;
-    width: 50%;
-}
-
-.section1droite img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.jeux {
-    position: fixed;
-    bottom: 80px;
-    left: 0;
-    right: 0;
-    display: flex;
-    gap: 40px;
-    justify-content: space-around;
-    padding-inline: 50px;
-}
-
-.jeu {
-    position: relative;
-    flex: 1;
-}
-
-.jeu-content {
-    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
-    backdrop-filter: blur(8px);
-    border-radius: 16px;
-    padding: 25px;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.jeu-content button {
-    margin-bottom: 0;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 8px;
-    padding: 10px 15px;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-.jeu-content button:hover {
-    background-color: var(--secondary-color-light);
-    cursor: url('../assets/cursors/cursor-green.svg') 50 50, auto;
-}
-
-.jeu:hover .jeu-content {
-    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-    transform: scale(1.02);
-}
-
-.jeu:hover .jeu-image {
-        height: 250px;
-        overflow: visible;
-    }
-
-.jeu-image {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 250px;
-    height: 0;
-    background-size: contain;
-    overflow: hidden;
-    transition: height 0.4s ease-out;
-    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
-}
-
-.jeu-image img {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-    align-self: flex-end;
 }

@@ -1,0 +1,114 @@
+section{
+    padding: 50px;
+}
+
+.section1{
+    color: var(--white);
+    background-image: url('../assets/images/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.sectionHeader{
+    display: flex;
+}
+
+.section1gauche{
+    width: 50%;
+}
+
+.section1gauche h1{
+    font-size: 4em;
+}
+
+.section1droite{
+    flex: 1;
+    padding: 20px;
+    width: 50%;
+}
+
+.section1droite img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.jeux {
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    padding-inline: 50px;
+}
+
+.jeu {
+    position: relative;
+    flex: 1;
+}
+
+.jeu-content {
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.jeu-content button {
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.jeu-content button:hover {
+    background-color: var(--secondary-color-light);
+    cursor: url('../assets/cursors/cursor-green.svg') 50 50, auto;
+}
+
+.jeu:hover .jeu-content {
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.jeu:hover .jeu-image {
+        height: 250px;
+        overflow: visible;
+    }
+
+.jeu-image {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 0;
+    background-size: contain;
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+}
+
+.jeu-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    align-self: flex-end;
+}
