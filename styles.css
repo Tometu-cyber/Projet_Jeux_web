@@ -86,6 +86,22 @@ section{
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.jeu-content button {
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.jeu-content button:hover {
+    background-color: var(--secondary-color-light);
+    cursor: url('../assets/cursors/cursor-green.svg') 50 50, auto;
+}
+
 .jeu:hover .jeu-content {
     background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
