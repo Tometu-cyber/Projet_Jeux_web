@@ -2,4 +2,7 @@
 .DS_Store
 
 # test/
-test/
+frontend/test/
+
+# node_modules/
+backend/node_modules/
