@@ -1,0 +1,5 @@
+# Ignore .vscode/ dossier
+.vscode/
+
+# Ignore MacOS files
+.DS_Store
